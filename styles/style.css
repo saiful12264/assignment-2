@@ -198,6 +198,143 @@
   top: -120px;
   left: 345px;
 }
+/* Deal Section */
+.deal {
+  margin-top: 130px;
+  margin-bottom: 120px;
+}
+.deal-title {
+  font-weight: 700;
+  font-size: 3.125rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+#latest {
+  color: rgb(233, 90, 8);
+}
+.deal-des {
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 120px;
+}
+/* deal img */
+
+.left-des {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.left-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.right-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.right-des {
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.left1 {
+  background-image: url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 14px;
+  flex: 1;
+}
+.left2 {
+  background-image: url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 14px;
+  flex: 1;
+}
+.deal-img-right {
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  background-size: cover;
+}
+.deal-img {
+  display: flex;
+
+  gap: 25px;
+  width: 100%;
+  height: 423px;
+}
+.deal-img-left {
+  /* display: flex;
+  flex-direction: column;
+  flex: 1; */
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  gap: 25px;
+}
+.deal-img-right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Join Section */
+.join-title {
+  font-weight: 700;
+  font-size: 3.125rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 23px;
+  /* margin-top: 119px; */
+}
+.join-btn {
+  background-color: rgb(233, 90, 8);
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px 43px;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+.join {
+  background-image: url(../assets/news-letter-bg.png);
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.join-b {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.join-input {
+  font-weight: 400;
+  font-size: 1rem;
+  /* text-align: center; */
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* media query */
 @media screen and (max-width: 576px) {
@@ -273,7 +410,7 @@
     width: 100%;
   }
   .plant-lover-content {
-    padding: 0 16px 140px 16px;
+    padding: 0 16px 16px 16px;
   }
   .plant-lover-right {
     padding-top: 0;
@@ -281,8 +418,80 @@
   .plant-lover-title {
     font-size: 1.5rem;
   }
-  .plant-lover-des {
+  .plant-lover-des li {
     font-size: 0.875rem;
-    padding-left: 30px;
+  }
+  .plant-lover-des {
+    padding: 16px;
+  }
+
+  /* Deal Section */
+  .deal {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .deal-img {
+    flex-direction: column;
+    height: 581px;
+    max-width: 361px;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .deal-img-left,
+  .deal-img-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .deal-img-left {
+    height: 67%;
+  }
+
+  .left1,
+  .left2,
+  .deal-img-right {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .left-title,
+  .right-title {
+    font-size: 1.25rem;
+  }
+
+  .left-des,
+  .right-des {
+    font-size: 1rem;
+  }
+  .deal-des {
+    margin-bottom: 51px;
+    font-size: 0.875rem;
+  }
+  .deal-title {
+    font-size: 1.5rem;
+  }
+
+  /* Join Section */
+
+  .join {
+    height: 276px;
+  }
+  .join-title {
+    font-size: 20px;
+  }
+  .join-btn {
+    padding: 19px 12px;
+  }
+  .join-b {
+    grid-template-columns: 0.5fr 0.5fr;
   }
 }
